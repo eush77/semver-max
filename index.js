@@ -3,6 +3,12 @@
 var semver = require('semver');
 
 
-module.exports = function (v1, v2) {
-  return semver.gt(v1, v2) ? v1 : v2;
+var max2 = function (v1, v2) {
+  console.log(v1, 'vs', v2);
+  return semver.gt(v2, v1) ? v2 : v1;
+};
+
+
+module.exports = function () {
+  return [].reduce.call(arguments, max2);
 };
