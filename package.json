@@ -1,7 +1,7 @@
 {
   "name": "semver-max",
   "version": "0.0.0",
-  "description": "Find maximum version according to semver",
+  "description": "Find maximum (or minimum) version according to semver",
   "author": "Eugene Sharygin <eush77@gmail.com>",
   "license": "MIT",
   "scripts": {

@@ -4,7 +4,7 @@
 
 [![Build Status][travis-badge]][travis] [![Dependency Status][david-badge]][david]
 
-Find maximum version according to semver.
+Find maximum (or minimum) version according to semver.
 
 [travis]: https://travis-ci.org/eush77/semver-max
 [travis-badge]: https://travis-ci.org/eush77/semver-max.svg
@@ -40,7 +40,7 @@ Returns the maximum version.
 
 Use a different comparator (see [npm/node-semver]).
 
-`semverMax.gt` computes maximum (the default), `semverMax.lt` computes minimum instead.
+`semverMax.gt` computes the maximum (the other name for `semverMax`), `semverMax.lt` computes the minimum instead.
 
 The difference between `semverMax.gt` and `semverMax.gte` (or `semverMax.lt` and `semverMax.lte`) is a bit more subtle:
 
