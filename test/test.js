@@ -12,3 +12,9 @@ test(function (t) {
           'many arguments');
   t.end();
 });
+
+
+test('use with reduce', function (t) {
+  t.equal(['0.0.0', '0.1.0', '1.0.0'].reduce(semverMax), '1.0.0', 'semverMax');
+  t.end();
+});

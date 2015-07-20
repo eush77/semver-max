@@ -10,5 +10,7 @@ var max2 = function (v1, v2) {
 
 
 module.exports = function () {
-  return [].reduce.call(arguments, max2);
+  return []
+    .filter.call(arguments, semver.valid)
+    .reduce(max2);
 };
